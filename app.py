@@ -10,5 +10,6 @@ def hello():
 def greet(name):
     return render_template('hi.html', name=name)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Remove the if __name__ block for production
+# if __name__ == '__main__':
+#     app.run(debug=True)
